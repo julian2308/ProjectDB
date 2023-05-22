@@ -6,8 +6,11 @@ package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 
 import javafx.fxml.Initializable;
+import javafx.scene.control.ChoiceBox;
+import managers.QueriesManager;
 
 /**
  * FXML Controller class
@@ -16,6 +19,13 @@ import javafx.fxml.Initializable;
  */
 public class IndexController implements Initializable {
 
+    private QueriesManager myQueriesManager = new QueriesManager();
+    
+    @FXML
+    private ChoiceBox<String> cbDataBases;
+    
+   
+
   
 
     /**
@@ -23,9 +33,10 @@ public class IndexController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        this.cbDataBases.getItems().addAll(myQueriesManager.getQuery());
     }
 
 
+    
 
 }
