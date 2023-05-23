@@ -1,4 +1,4 @@
-package vista;
+package view;
 
 
 import javafx.application.Application;
@@ -20,9 +20,9 @@ public class Start extends Application{
         Scene scene = new Scene(root);
         
         ventana.setScene(scene);
-        ventana.setTitle("RENTAR DE VEHICULOS");
+        ventana.setTitle("Gestor Bases de Datos");
         ventana.setResizable(false);
-        ventana.setOnCloseRequest(event->{event.consume();});
+        ventana.setOnCloseRequest(event->{});
         ventana.show();
     }
     

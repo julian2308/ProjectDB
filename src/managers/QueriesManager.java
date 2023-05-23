@@ -13,7 +13,7 @@ public class QueriesManager {
 
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/world", "host", "123456789");
+                    "jdbc:mysql://localhost:3306", "root", "kiara123456789");
             Statement stmt = con.createStatement();
             System.out.println("ENTRO");
             ResultSet rs = stmt.executeQuery("show databases");
@@ -38,7 +38,7 @@ public class QueriesManager {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/world", "host", "123456789");
+                    "jdbc:mysql://localhost:3306", "root", "kiara123456789");
             Statement stmt = con.createStatement();
             System.out.println("ENTRO");
             ResultSet rs = stmt.executeQuery("show databases");
